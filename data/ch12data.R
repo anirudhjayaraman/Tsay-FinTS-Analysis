@@ -1,0 +1,6 @@
+data(w.gs3n1c)
+data(w.gs3c)
+data(m.sp6299)
+data(m.ibmspln6299)
+data(m.sp5.6204)
+data(m.geln)

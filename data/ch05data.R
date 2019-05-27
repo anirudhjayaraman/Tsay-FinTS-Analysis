@@ -1,0 +1,8 @@
+data(ibm)
+data(ibm9912.tp)
+data(ibmdurad)
+data(ibm1to5.dur)
+data(ibm91.ads)
+data(ibm91.adsx)
+data(day15.ori)
+data(day15)

@@ -29,7 +29,12 @@ y <- dat_matrix[,-ncol(X)]
 beta_hat <- solve(t(X) %*% X) %*% t(X) %*% y # (X'X)^-1 X'y
 y_hat <- X %*% beta_hat 
 e_hat <- y - y_hat 
-d_hat <- (nrow(X) - nrow(beta_hat))^-1 * diag(diag(e_hat %*% t(e_hat)))
+d_hat <- (nrow(X) - nrow(beta_hat))^-1 * crossprod(e_hat) # crossprod(e_hat) == t(e_hat) %*% e_hat
+# since the covariance matrix of errors is assumed diagonal:
+d_hat <- diag(d_hat)
 
-
+# R-squared of the ith asset:
+RSS <- diag(crossprod(e_hat))
+TSS <- diag(crossprod(y - colMeans(y)))
+R_sq <- 1 - (RSS/TSS)
 

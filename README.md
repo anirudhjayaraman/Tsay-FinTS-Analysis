@@ -8,19 +8,6 @@ In order to load the data source the script file **tsay_3e_data.R** and then loa
 ```{r}
 source("tsay_3e_data.R")
 ```
-Expected output would be something like:
-```
-Loading required package: zoo
-
-Attaching package: 'zoo'
-
-The following objects are masked from 'package:base':
-
-    as.Date, as.Date.numeric
-
-Warning message:
-package 'FinTS' was built under R version 3.5.3
-```
 Next, if you wish to load all datasets fromt the book into memory, go ahead with the following commands:
 
 ```{r}

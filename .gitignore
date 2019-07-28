@@ -1,2 +1,6 @@
 .Rhistory
 dummy-to-ignore/
+*.zip
+*.gz
+log/*.log
+log/*.log.[0-9]

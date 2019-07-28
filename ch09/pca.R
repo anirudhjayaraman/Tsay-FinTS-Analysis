@@ -5,7 +5,7 @@ library(FinTS)
 library(zoo)
 
 # Set working directory
-setwd(file.path("F:","2019","Tsay-FinTS-Analysis"))
+setwd(file.path("C:","git","Tsay-FinTS-Analysis"))
 
 # Load the source datasets for Ch 9
 source(file.path("data","ch09data.R"), echo = TRUE)

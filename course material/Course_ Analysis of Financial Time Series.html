@@ -1,0 +1,217 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- saved from url=(0066)http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <title>Course: Analysis of Financial Time Series</title>
+  <meta name="generator" content="Sausage Software HotDog PageWiz">
+<style type="text/css">
+<!--
+body,td,th {
+	font-family: Arial;
+	font-size: 12pt;
+	font-weight: bold;
+	color: #000;
+}
+.style2 {color: #FF0000}
+.style3 {color: #0000FF}
+.style4 {color: #000000}
+-->
+</style></head>
+<body>
+<p><font color="#ff0000" face="Arial" size="5"> Spring Quarter 2017</font></p>
+<p><font color="#0000ff" face="Arial" size="5">Business 41202: Analysis
+of Financial Time Series</font></p>
+<p><font face="Arial" size="4">Instructor: Ruey S. Tsay</font></p>
+<p><font face="Arial" size="4"><a href="mailto:ruey.tsay@gsb.uchicago.edu">ruey.tsay@Chicagobooth.edu</a></font></p>
+<p><font face="Arial" size="4">Phone: 773-702-6750<br>
+Fax:&nbsp;&nbsp;&nbsp;773-702-0458 (Please put my name on the cover
+page)<br>
+Office HPC: 455</font></p>
+<p><font face="Arial" size="4"><span class="style2">Lecture</span>:<br>
+  Bus 41202-01: Wednesday 8:30 AM to 11:30 AM at Class Room 04, Harper Center <br>
+  Bus 41202-81: Tuesday 6:00 PM to 9:00 PM at Room 308, Gleacher Center<br>
+</font></p>
+<p><font face="Arial" size="4"> <span class="style3">Teaching Assistant</span>:&nbsp; Mr. Jae Hyen Chung<br>
+  e-mail: jchung4@chicagobooth.edu <br>
+  (e-mail is the&nbsp;easiest way to contact Jae)<br>
+  <br>
+<font color="#ff0000">Review Sessions</font>:&nbsp;<br>
+BS41202-01: Tuesdays 11:45 PM to 12:15 PM. Room HCC04. (Starts from Week 2.)<br>
+BS41202-81:  Tuesdays 5:20 PM to 5:50 PM . Room GC 308 (except 4/4 and 6/6 at GC206). <br>
+</font><font face="Arial" size="4">(Starts from Week 1.)</font></p>
+<p><font face="Arial" size="4"><a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/syllab.pdf">Syllabus</a>&nbsp;of
+the course.</font> </p>
+<p><font color="#ff0000" face="Arial" size="4">Course materials</font> </p>
+<p><font face="Arial" size="4">Text: Analysis of Financial Time Series,
+3rd Edition <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ruey S. Tsay,
+Wiley, 2010.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ISBN:
+0-470-41435-4<br>
+</font></p>
+<p><font face="Arial" size="4">Data sets:<br>
+<a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/fts3">http://faculty.chicagogsb.edu/ruey.tsay/teaching/fts3/</a><br>
+or additional datasets will be posted for lectures and homework
+assignments. <br>
+</font></p>
+<p><font face="Arial" size="4"><font color="#ff0000">Lecture Notes</font>:&nbsp;
+posted a week before lecture. (Data sets will be updated)<br>
+&gt;&gt; Print or download a copy of the weekly lecture note before class.
+&lt;&lt;</font></p>
+<p><font face="Arial" size="4">Pre-class reading: <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/lec0-17.pdf">Note</a> and data sets: <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/d-ibm-0110.txt">d-ibm-0110.txt</a>, <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/d-vix0411.csv">d-vix0411.csv</a><br>
+  Week 1: <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/lec1-17.pdf">Lecture </a> &amp; Data sets used: <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/d-aapl0413.txt">d-aapl0413.txt</a>, <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/d-exuseu.txt">d-exuseu.txt</a>, m<a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/m-ibm-6815.txt">-ibm-6815.txt</a>, <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/m-tb3ms.txt">m-tb3ms.txt</a><br>
+  <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/m-tb6ms.txt">m-tb6ms.txt</a>, <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/q-ko-earns8309.txt">q-ko-earns8309.txt</a>, <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/taq-cat-t-jan042010.txt">taq-cat-t-jan042010.txt</a>, <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/d-cdsJPM.txt">d-cdsJPM.txt</a><br>
+  <br>
+  Week 2:<a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/lec2-17.pdf"> Lecture</a> &amp; Data sets used: <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/dgnp82.txt">dgnp82.txt</a></font>, <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/d-ibmvwew6202.txt">d-ibmvwew6202.txt</a>, <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/m-dec12910-6114.txt">m-dec12910-6114.txt</a><br>
+R script: <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/lagplot.R">lagplot.R</a> (to be discussed in class)</p>
+<p><font face="Arial" size="4">Week 3: <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/lec3-17.pdf">Lecture</a> &amp; Data sets used:</font> <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/q-gdpc96.txt">q-gdpc96.txt</a>, <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/w-gs1n36299.txt">w-gs1n36299.txt</a>, <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/m-houst-5917.txt">m-houst-5917.txt</a>, <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/q-earn-jnj.txt">q-earn-jnj.txt</a></p>
+<p><font face="Arial" size="4">Week 4: <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/lec4-17.pdf">Lecture</a> &amp; Data sets used</font>: VIX and SP5 index downloaded via the quantmod package, <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/m-intc7303.txt">m-intc7303.txt</a>, <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/sp500.txt">sp500.txt</a> , <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/m-tb3n6.txt">m-tb3n6.txt</a><br>
+(start to use the fGarch package).</p>
+<p><font face="Arial" size="4">Week 5: <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/lec5-17.pdf">Lecture</a> &amp; Data set used:</font> <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/m-ibm2609.txt">m-ibm2609.txt</a><br>
+(Addtional packages used:<a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/IntroPackages.pdf"> Introduction</a>) rugarch and stochvol. The introduction gives examples.</p>
+<p><font face="Arial" size="4">Week 7: <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/lec6-17.pdf">Lecture</a> &amp; Data set used: download directly using quantmod.</font> See also Week 7a below.</p>
+<p><font face="Arial" size="4">Week 7a: <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/lec7-17.pdf">Lecture</a> &amp; Data sets used: </font><a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/m-gmsp6708.txt">m-gmsp6708.txt</a>, <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/m-ibmln2699.txt">m-ibmln2699.txt</a>, <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/taq-jnj-t-oct4t152010.txt">taq-jnj-t-oct4t152010.txt</a>, <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/ibm91-ads.txt">ibm91-ads.txt</a>, <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/ibm91-adsx.txt">ibm91-adsx.txt</a>, <br>
+<a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/taq-cat-t-jan042010.txt">taq-cat-t-jan042010.txt</a>, <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/taq-cat-cpch-jan042010.txt">taq-cat-cpch-jan042010.txt</a> R scripts used: hfchg.R, hfrtn.R and hfntra.R</p>
+<p><font face="Arial" size="4">Week 8:<a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/lec8-17.pdf">Lecture</a></font>, Data sets used:</p>
+<p><font face="Arial" size="4">Week 9: <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/lec9-17.pdf">Lecture</a> &amp; <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/portfolio.pdf">portfolio</a>, Data set:</font> <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/d-ibm-rq.txt">d-ibm-rq.txt</a>, <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/d-ibmbaml3a-0110.txt">d-ibmbaml3a-0110.txt</a>, <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/d-ibm-0110.txt">d-ibm-0110.txt</a><br>
+R packages used: evir, quantreg,  and fGarch. R script used: RMeasure.R, evtVaR.R, and RMfit.R</p>
+<p><font face="Arial" size="4">Week 10: <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/lec10-17.pdf">Lecture</a> &amp; Data sets used:<a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/q-gdpun.txt">q-gdpun.txt</a>, <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/d-bhp0206.txt">d-bhp0206.txt</a>, <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/d-vale0206.txt">d-vale0206.txt</a>, <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/d-ibmbaml3a-0110.txt">d-ibmbaml3a-0110.txt</a>; </font><br>
+R packages used: urca and MTS</p>
+<p><font face="Arial" size="4"><font color="#ff0000">Computing</font>: <br>
+  The main software used is R, which is free
+    from R-Project for Statistical Computing.<br>
+  The most recent version of R is R3.2.2<br>
+  The following
+      packages are needed in R:<br>
+  </font><font face="Arial" size="4">(<span style="color: rgb(255, 0, 0);">fBasics,
+         fGarch, quantmod, fUnitRoots, MTS</span>,
+    <span style="color: rgb(255, 0, 0);">nnet</span>, <span style="color: rgb(255, 0, 0);">evir, stochvol, urgarch, urca</span>)<br>
+[In fact, you may want to install the complete package <span class="style2">Rmetrics</span>. This can be done in R using<br>
+  the following two commands:</font><font face="Arial" size="4"><br>
+  source("http://www.rmetrics.org/Rmetrics.R")<br>
+  install.Rmetrics()
+  ]</font><font face="Arial" size="4"><br>
+  </font></p>
+<p><font face="Arial" size="4">[* Students may use other packages or
+programs if they prefer. *]</font></p>
+<p><font face="Arial" size="4"><span style="color: rgb(255, 0, 0);">R
+</span>Installation:</font></p>
+<p><font face="Arial" size="4"><span style="color: rgb(255, 0, 0);">Instructions
+for download R</span>:<br>
+&nbsp;&nbsp; 1. <a href="http://www.r-project.org/">Download R here</a>. [Click <span class="style2">CRAN</span> to select a mirror site; a web site close to you.]<br>
+</font></p>
+<p><font face="Arial" size="4"><span style="color: rgb(255, 0, 0);">Instructions
+for running R on PC</span> will be demonstrated in class.<br>
+</font></p>
+<p>[* Students may also use RStudio (which can also be found free on the web). *]</p>
+<p><span class="style2">R commands used in lectures:</span> (updated weekly)<br>
+  Week 1: <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/Rcommands_lec1.txt">Rcommands_lec1.txt</a><br>
+Week 2: <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/Rcommands_lec2.txt">Rcommands_lec2.txt</a><br>
+Week 3: <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/Rcommands_lec3.txt">Rcommands_lec3.txt </a><br>
+Week 4: <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/Rcommands_lec4.txt">Rcommands_lec4.txt </a><br>
+Week 5: <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/Rcommands_lec5.txt">Rcommands_lec5.txt </a><br>
+Week 6:<br>
+Week 7: <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/Rcommands_lec7.txt">Rcommands_lec7.txt</a><br>
+Week 8: <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/Rcommands_lec8.txt">Rcommands_lec8.txt</a><br>
+Week 9: <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/Rcommands_lec9.txt">Rcommands_lec9.txt<br>
+</a>Week 10: <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/Rcommands_lec10.txt">Rcommands_lec10.txt</a><br>
+  <font face="Arial" size="4"><br>
+</font></p>
+<font face="Arial" size="4"><span style="color: rgb(255, 0, 0);"></span></font>
+<p><font face="Arial" size="4"><font color="#ff0000">Homework</font> : <br>
+Assignment before class: Read Chapter 1 of the textbook.<br>
+</font><a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/hw1-17.pdf">HW1</a>: Data sets used: <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/d-cat0716-3dx.txt">d-cat0716-3dx.txt</a>, <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/d-ff-factors.txt">d-ff-factors.txt</a>, <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/m-pg6116-3dx.txt">m-pg6116-3dx.txt<br>
+</a><a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/hw1s-17.pdf">Solutions</a> &amp; <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/R-output-hw1.txt">R-commands</a> used. The R output is for your reference only.<br>
+<a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/hw2-17.pdf">HW2</a> : Data sets used available from FRED.<br>
+<a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/hw2s-17.pdf">Solutions</a> &amp; <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/Routput-HW2.txt">R-commands</a> used.<a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/hw3-17.pdf"><br>
+HW3</a> : Data sets used: <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/d-cdsALL.txt">d-cdsALL.txt<br>
+</a><a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/hw3s-17.pdf">Solutions</a> &amp; <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/Routput-HW3.txt">R-commands</a> used. <br>
+  <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/hw4-17.pdf">HW4</a> : Data sets used: <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/m-kovw-5116.txt">m-kovw-5116.txt</a><br>
+  <br>
+  <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/hw4s-17.pdf">Solutions</a> &amp; <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/Routput-HW4.txt">R-commands</a> used.<br>
+  <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/hw5-17.pdf">HW5</a> : Data sets used: <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/taq-wba-feb6to17-2017.txt">taq-wba-feb6to17-2017.txt </a><br>
+  <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/hw5s-17.pdf">Solutions</a> &amp;<a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/Routput-HW5.txt"> R-commands</a> used. <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/mmm-taq-trade.txt"><br>
+  </a><a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/hw6-17.pdf">HW6</a>: Date sets used: <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/taq-wba-cpch-feb06-2017.txt">taq-wba-cpch-feb06-2017.txt</a><br>
+<a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/hw6s-17.pdf">Solutions</a> &amp; <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/Routput-HW6.txt">R-commands</a> used.</p>
+<p>&nbsp;</p>
+<p><font face="Arial" size="4"><font color="#0000ff">Office hour</font>
+  : (a) Wednesdays: 4:00 PM to 5:00 PM (Harper Center Rm 455)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp; &nbsp;
+(b) By appointment<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp; &nbsp;
+&nbsp; (c) E-mail&nbsp;me at any time with questions.<br>
+(This is the easiest way to reach me.)</font></p>
+<p><font face="Arial" size="4"><font color="#0000ff">Midterm</font> :
+Week 6. Open book and notes!<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Date: Campus session: May 3 (Wednesday)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   Evening session: May 2 (Tuesday)<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+</font><font face="Arial" size="4"><font color="#0000ff">Final Exam</font>:
+ Exam week<br>
+&nbsp;&nbsp;&nbsp;&nbsp; Campus:&nbsp;&nbsp;&nbsp;Wednesday, June 7, 8:30 AM to 11:30 AM<br>
+&nbsp;&nbsp;&nbsp;&nbsp; Evening: Tuesday, June 6, 6:00 PM to 9:00 PM.<br>
+&nbsp;&nbsp;&nbsp;&nbsp; Open book and notes. 
+</font></p>
+<p><font face="Arial" size="4">###### For Students showing summer intern statrts early ########<br>
+  Final exam: May 31 (Wednesday), 2017 from 6:00 pm to 9:00 pm. Room C06 (Harper Center).
+  <br>
+  ###### <br>
+</font></p>
+<p><font face="Arial" size="4"><font color="#ff0000">Grading</font>:
+30% midterm + 35% final exam + 5% in-class discussion + 30% homework, <br>
+where the scores of each component are normalized to be out of 100.<br>
+<br>
+ Chicagobooth mandates a maximum class
+grade point average of 3.33.<br>
+I rank the class based on the final scores using the above grading <br>
+formula and pick grade cutoffs so that I can get the highest class <br>
+GPA under the constraint.</font></p>
+<p>Provisional Grade: For graduating students, provisional grades will be assigned based on the midterm and hw assignments that are available via Week 8.
+</p>
+<p><font face="Arial" size="4"><span style="color: rgb(255, 0, 0);">Additional
+  Web Sites for data</span>: <br>
+(a) Wharton WRDS at <a href="http://wrds.wharton.upenn.edu/">http://wrds.wharton.upenn.edu</a> <br>
+(b) St Louis Fed at <a href="http://research.stlouisfed.org/fred2/">http://research.stlouisfed.org/fred2/</a><br>
+</font></p>
+<p><font face="Arial" size="4"><span class="style2">Additional R scripts</span>: <br>
+  0. Moving average plot: <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/ma.R">ma.R</a> <br>
+1. Forecasts with specified forecast origin: <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/fore.R">fore.R</a>  &amp; forecast plot: <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/foreplot.R">foreplot.R</a> ; one-step predictions: <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/foreOne.R">foreOne.R</a><br>
+2. Recursive out-of-sample forecasts:<a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/backtest.R"> backtest.R</a> <br>
+3. To estimate an IGARCH model: <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/Igarch.R">Igarch.R</a> &amp; GARCH-M program: <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/garchM.R">garchM.R</a> <br>
+4. Moving window for volatility calculation: <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/mvwindow.R">mvwindow.R</a> <br>
+5. Yang and Zhang's methof: <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/yz.R">yz.R</a> </font><font face="Arial" size="4"><br>
+6. Recursive out-of-sample nnet forecasts: <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/backnnet.R">backnnet.R</a><br>
+7. Compute volatility of a given GARCH11 model:<a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/garch11v.R"> garch11v.R</a> <br>
+(including IGARCH(1,1) model for RiskMetrics). <br>
+8. Co-integration test: </font>(Use urca package)<br>
+<font face="Arial" size="4">9. ACD estimation: <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/acd.R">acd.R</a> </font><br>
+10. High-frequency intraday log returns:<a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/hfrtn.R"> hfrtn.R</a> <br>
+11. High-frequency intraday number of transactions:<a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/hfntra.R"> hfntra.R</a> <br>
+12. High-frequency price change and duration: <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/hfchg.R">hfchg.R</a> <br>
+13. Compute VaR based on traditional EVT estimates: <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/evtVaR.R">evtVaR.R</a><br>
+14. Risk measure: <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/RMeasure.R">RMeasure.R  <br>
+</a>15. TGARCH11 &amp; exp-GARCH models: <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/Tgarch11.R">Tgarch11.R</a> &amp; <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/Egarch.R">Egarch.R</a><br>
+16. R program for SV model: <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/svfit.R">svfit.R</a> (no leverage effect); See also the R package "stochvol"<br>
+17. R program for RiskMetrics: <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/RMfit.R">RMfit.R</a><br>
+18. R simulation of Wiener processes: <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/WienerSim.R">WienerSim.R</a><br>
+19. R simulation of maximum of iid random variables: <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/EVTsim.R">EVTsim.R </a><br>
+</p>
+<p><font face="Arial" size="4"><font color="#ff0000">Feedback:  
+</font></font></p>
+<p><font face="Arial" size="4"><font color="#ff0000">Mid-term: </font><span class="style4"><a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/exam17.pdf">Exam</a> and<a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/exam17s.pdf"> Solutions</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></font></p>
+<p><font face="Arial" size="4"><font color="#ff0000">Final Exam: <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/fexam17.pdf">Exam</a></font><font face="Arial" size="4"> and <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/fexam17s.pdf">Solutions</a></font><font color="#ff0000"><br>
+  </font></font></p>
+<p><font face="Arial" size="4"><font style="color: rgb(255, 0, 0);" color="#0000ff">Old exams </font>:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></p>
+<p><font face="Arial" size="4">Year 2016: <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/exam16.pdf"><span style="text-decoration: underline;">midterm</span></a> and <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/exam16s.pdf">solutions</a>&nbsp;&nbsp;</font><font face="Arial" size="4"><br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp; <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/fexam16.pdf">Final exam</a> and <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/fexam16s.pdf">solutions</a></font></p>
+<p><font face="Arial" size="4">Year 2015: <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/exam15.pdf"><span style="text-decoration: underline;">midterm</span></a> and <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/exam15s.pdf">solutions</a>&nbsp;&nbsp;</font><font face="Arial" size="4"><br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp; <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/fexam15.pdf">Final exam</a> and <a href="http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2017/fexam15s.pdf">solutions</a></font></p>
+
+
+</body></html>

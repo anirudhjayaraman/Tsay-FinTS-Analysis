@@ -21,7 +21,7 @@ source(file.path("data","ch04data.R"))
 source(file.path("data","ch12data.R"))
 ```
 
-Chapter 9 (ch9) covers R code for the following topics:
+**Chapter 9 (ch09)** covers R code for the following topics:
 * PCA
 * Single Factor Model Estimation
 * Multi Factor Model Estimation

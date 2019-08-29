@@ -4,3 +4,4 @@ dummy-to-ignore/
 *.gz
 log/*.log
 log/*.log.[0-9]
+.RData

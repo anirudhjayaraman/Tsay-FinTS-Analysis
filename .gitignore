@@ -1,7 +1,9 @@
 .Rhistory
-dummy-to-ignore/
+*.pdf
 *.zip
 *.gz
+course/
 log/*.log
 log/*.log.[0-9]
 .RData
+.Rproj.user
